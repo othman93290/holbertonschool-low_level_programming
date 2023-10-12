@@ -1,5 +1,5 @@
 #include <stdio.h>
-gcc
+gcc;
 int main()
 {
 print ("\"with proper grammar, but the outcome is a piece of art,);
