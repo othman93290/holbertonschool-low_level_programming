@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * La fonction main est le point d'entrée du programme.
- * Elle affiche un message simple à l'écran.
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
