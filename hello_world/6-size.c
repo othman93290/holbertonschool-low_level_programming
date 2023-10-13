@@ -1,7 +1,10 @@
 #include <stdio.h>
 int main(void)
 {
-printf(gcc 6-size.c -m32 -o size32 2> /tmp/32);
-	printf(gcc 6-size.c -m64 -o size64 2> /tmp/64);
+	printf("Size of a char: %lu byte(s)\n", sizeof(char));
+    printf("Size of an int: %lu byte(s)\n", sizeof(int));
+    printf("Size of a long int: %lu byte(s)\n", sizeof(long));
+    printf("Size of a long long int: %lu byte(s)\n", sizeof(long long));
+    printf("Size of a float: %lu byte(s)\n", sizeof(float));
 return (0);
 }
