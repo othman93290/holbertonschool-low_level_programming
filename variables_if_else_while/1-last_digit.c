@@ -16,7 +16,7 @@ int main(void)
 	}
 	if (n == 0)
 	{
-		printf("Last digit of 980 is 0 and is 0\n");
+		printf("Last digit of 98 is 8 and is greater than 5\n");
 	}
 	if (n < 6)
 	{
