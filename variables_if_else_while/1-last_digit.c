@@ -17,15 +17,15 @@ srand(time(0));
 	/* your code goes there */
 	if (n > 5)
 	{
-		printf("Last digit of 98 is 8 and is greater than 5\n");
+		printf("Last digit of %d is 8 and is greater than 5\n", n);
 	}
-	if (n == 0)
+	if else (n == 0)
 	{
-		printf("Last digit of 980 is 0 and is 0\n");
+		printf("Last digit of %d is 0 and is 0\n", n);
 	}
-	if (n < 6)
+	else (n < 6)
 	{
-		printf("Last digit of -98 is -8 and is less than 6 and not 0\n");
+		printf("Last digit of %d is -8 and is less than 6 and not 0\n", n);
 	}
 	return (0);
 }
