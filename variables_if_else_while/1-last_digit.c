@@ -17,14 +17,17 @@ int main(void)
 	/* your code goes there */
 	if (n > 5)
 	{
+		int n = 98;
 		printf("Last digit of n is and is greater than 5 %d\n", n);
 	}
 	else if (n == 0)
 	{
+		int n = -98;
 		printf("Last digit of n is and is 0 %d\n", n);
 	}
 	else (n < 6)
 	{
+		int n = 980;
 		printf("Last digit of n is and is less than 6 and not 0 %d\n", n);
 	}
 	return (0);
