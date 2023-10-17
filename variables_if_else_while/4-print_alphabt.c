@@ -9,9 +9,9 @@
  */
 int main(void)
 {
-	char letter = 'a';
+	char letter;
 
-	while (letter <= 'z')
+	while (letter = 'a'; letter <= 'z')
 		if (letter != 'q' && letter != 'e')
 	{
 		putchar (letter);
