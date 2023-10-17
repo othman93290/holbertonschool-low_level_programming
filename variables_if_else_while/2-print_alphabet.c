@@ -2,7 +2,13 @@
 
 int main(void)
 {
-	char alphabet = 'abcdefghijklmnopqrstuvwxyz';
-	putchar(alphabet);
+	char letter = 'a';
+	while (letter <= 'z')
+	{
+		putchar(letter);
+		letter++;
+	}
+
+	putchar('\n');
 	return (0);
 }
