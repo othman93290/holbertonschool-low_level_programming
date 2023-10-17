@@ -2,6 +2,7 @@
 
 int main(void)
 {
-	putchar(alphabet.c);
+	char alphabet = 'a';
+	putchar(alphabet);
 	return (0);
 }
