@@ -9,20 +9,18 @@
  */
 int main(void)
 {
-	char number = '0';
+	char number;
 
-	for (number <= '9')
+	for (number = 0; number  <= '9';number ++)
 	{
 	putchar (number);
-	number++;
 	}
 
-	char letter = 'A';
+	char letter;
 
-	for (letter <= 'F')
+	for (letter = 'A'; letter <= 'F';letter ++)
         {
 		putchar (letter);
-		letter++;
 	}
 
 	putchar('\n');
