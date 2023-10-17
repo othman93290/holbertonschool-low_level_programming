@@ -1,7 +1,7 @@
-#include<stdio>
+#include <stdio.h>
 
 int main(void)
 {
-	putchar(alphabet.c)
+	putchar(alphabet.c);
 	return (0);
 }
