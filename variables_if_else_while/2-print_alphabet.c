@@ -2,7 +2,7 @@
 
 int main(void)
 {
-	char alphabet = 'a';
+	char alphabet = 'abcdefghijklmnopqrstuvwxyz';
 	putchar(alphabet);
 	return (0);
 }
