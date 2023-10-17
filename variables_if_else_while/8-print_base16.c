@@ -9,18 +9,13 @@
  */
 int main(void)
 {
-	char number;
-	char letter;
+	int number;
 
-	for (number = 0; number  <= '9'; number ++)
-	{
+	for (number = '0'; number  <= 9; number ++)
 	putchar (number);
-	}
 
-	for (letter = 'a'; letter <= 'f'; letter ++)
-	{
-	putchar (letter);
-	}
+	for (number = 'a'; number <= 'f'; number ++)
+	putchar (number);
 
 	putchar('\n');
 	return (0);
