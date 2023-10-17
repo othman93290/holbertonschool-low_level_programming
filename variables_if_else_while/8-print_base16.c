@@ -9,22 +9,22 @@
  */
 int main(void)
 {
-        char number = '0';
+	char number = '0';
 
-        while (number <= '9')
+	for (number <= '9')
+	{
+	putchar (number);
+	number++;
+	}
+
+	char letter = 'A';
+
+	for (letter <= 'F')
         {
-        putchar (number);
-        number++;
-        }
+		putchar (letter);
+		letter++;
+	}
 
-        letter = 'A';
-
-        while (letter <= 'F')
-        {
-                putchar (letter);
-                letter++;
-        }
-
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
