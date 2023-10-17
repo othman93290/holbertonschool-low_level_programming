@@ -12,6 +12,7 @@ int main(void)
 	int number;
 
 	while (number = '0'; number  <= '9'; number++)
+	{
 	putchar (number);
 
 	while (number + '0')
@@ -21,6 +22,7 @@ int main(void)
 	{
 		putchar (',');
 		putchar (' ');
+	}
 		number++;
 	}
 
