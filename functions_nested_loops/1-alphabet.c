@@ -5,8 +5,19 @@
  *
  * Return: Always 0.
  */
+
 int main(void)
-{
-    print_alphabet();
-    return (0);
+}
+	char letter = 'a';
+
+	while (letter <= 'z')
+	{
+	putchar (letter);
+	letter++;
+	}
+	{
+	print_alphabet();
+}
+	putchar("\n");
+	return (0);
 }
