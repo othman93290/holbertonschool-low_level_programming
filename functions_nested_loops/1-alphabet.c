@@ -7,8 +7,7 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
- */
-/**
+ *
  * print_alphabet - This function prints the lowercase alphabet.
  */
 void print_alphabet(void)
