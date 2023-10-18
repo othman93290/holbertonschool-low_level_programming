@@ -1,24 +1,21 @@
-#include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - check the code
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0 (Success)
  */
+int main(void)
+{
+        char letter = 'a';
 
-void print_alphabet(void);
-}
-	int letter = 'a';
-
-	for (letter <= 'z');
-	{
-	putchar (letter);
-	letter++;
-	}
-	{
-	print_alphabet();
-	}
+        while (letter <= 'z')
+        {
+        putchar (letter);
+        letter++;
+        }
 	putchar("\n");
 	return (0);
 }
