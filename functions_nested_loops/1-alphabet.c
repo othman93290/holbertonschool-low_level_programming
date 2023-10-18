@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int void print_alphabet(void)
 {
 	char letter;
 
