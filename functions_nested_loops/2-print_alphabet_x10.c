@@ -10,12 +10,12 @@
  *
  * print_alphabet - This function prints the lowercase alphabet.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char damso;
+	char i;
 	int letter;
 
-	for (damso = '0'; damso <= '9'; damso++)
+	for (i = '0'; i <= '9'; i++)
 	{
         	for (letter = 'a'; letter <= 'z'; letter++)
 		{
