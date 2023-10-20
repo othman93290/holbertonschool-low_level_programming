@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+ * * times_table - Print the 9 times table.
  *times_tables - print table
  *: that prints the 9 times table, starting with 0.
  *return: always 0.
