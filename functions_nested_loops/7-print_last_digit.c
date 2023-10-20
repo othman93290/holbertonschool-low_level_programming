@@ -2,22 +2,21 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * print_last_digit - check if c is print_last_digit*
- * @n: The ASCII value of the character to be checked.
- * Description: check if c is print_sign*
- * Return: 1 if print_sign or 0 if uppercase
+ * print_last_digit - Display the last digit of a number.
+ * @lastDigit :  It also returns the last digit.
+ * Return: The last digit of 'n'.
  */
-int print_last_digit(int lastD)
+int print_last_digit(int lastDigit)
 {
-	lastD = lastD % 10;
+	lastDigit = lastDigit % 10;
 		if (lastD < 0)
 		{
-			lastD = lastD * (-1);
-			_putchar(lastD + '0');
+			lastDigit = lastDigit * (-1);
+			_putchar(lastDigit + '0');
 		}
 		else
 		{
-			_putchar(lastD + '0');
+			_putchar(lastDigit + '0');
 		}
-		return (lastD);
+		return (lastDigit);
 }
