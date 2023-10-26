@@ -5,7 +5,7 @@ void print_rev(char *s)
 {
 	int a;
 
-	for (a = 0; (s[a]); a--)
+	for (a = 62; (s[a]); a--)
 	{
 	_putchar(s[a]);
 	}
