@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- *
- *
- *
+/**
+ * factorial - a funvtion that concatenate two string
+ * @s: pointer to a char
+ * Return: pointer to a char
  */
 
 int factorial(int n)
