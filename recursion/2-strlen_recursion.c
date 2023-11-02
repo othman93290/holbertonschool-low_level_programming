@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <string.h>
 
-/*
- *
- *
+/**
+ * _strlen_recursion - a funvtion that concatenate two string
+ * @s: pointer to a char
+ * Return: pointer to a char
  */
 
 int _strlen_recursion(char *s)
