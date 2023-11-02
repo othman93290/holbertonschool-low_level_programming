@@ -4,7 +4,7 @@
 
 /**
  * factorial - a funvtion that concatenate two string
- * @s: pointer to a char
+ * @n: pointer to a char
  * Return: pointer to a char
  */
 
