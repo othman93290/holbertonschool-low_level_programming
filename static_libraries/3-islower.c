@@ -1,16 +1,22 @@
 #include "main.h"
+#include <stdio.h>
+#include <time.h>
+
 /**
- *_puts - prints a string
- * @str: string to print
- *
- * Description: prints a string
- * On success: return the number of characters printed
+ * _islower - check if c is lowercase*
+ * @c: The ASCII value of the character to be checked.
+ * Description: check if c is lowercase
+ * Return: 1 if lowercase or 0 if uppercase
  */
 
-void _puts(char *str)
+int _islower(int c)
 {
-while (*str)
-_putchar(*str++);
-
-_putchar('\n');
+	if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
