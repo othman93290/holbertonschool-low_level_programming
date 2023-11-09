@@ -8,20 +8,20 @@
  *
  * Return: char ptr
  */
-char	*crerate_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
-	char *res;
-	unsigned int	x;
+	char *array = NULL;
+	unsigned int i;
 
 	if (size == 0)
-		return (0);
-	res = (char *) malloc(sizeof(char) * size);
-	/**alloue de la memoire / resultat stocker dans res*/
-	if (res == 0)
-		return (0);
-	for (x = 0; x < size; x++)
-		/**Initialise chaque élément du tableau avec c à l'aide d'une boucle for*/
-		res[x] = c;
-	return (res);
-	/**Retourne le pointeur vers le tableau nouvellement créé.*/
+		return (NULL);
+
+	array = (char *)malloc(size * sizeof(char));
+	if (array != NULL)
+	{
+		for (i = 0; i < size; i++)
+			array[i] = c;
+	}
+
+	return (array);
 }
