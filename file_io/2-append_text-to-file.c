@@ -1,41 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
 #include "main.h"
 
 /**
- * create_file - Creates a file with specific permissions and writes content
- * @filename: Name of the file to create
- * @text_content: NULL terminated string to write to the file
+ * append_text_to_file - function
+ * @filename: const char ptr
+ * @text_content: char ptr
  *
- * Return: 1 on success, -1 on failure
+ * Return: int
  */
-int create_file(const char *filename, char *text_content)
+int	append_text_to_file(const char *filename, char *text_content)
 {
-	int file_descriptor, write_status;
-	mode_t permissions = S_IRUSR | S_IWUSR;
+	int	f;
+	int	l;
+	int	x;
 
-	if (filename == NULL)
+	if (filename == 0)
 		return (-1);
-
-	file_descriptor = open(filename, O_WRONLY | O_CREAT | O_TRUNC, permissions);
-
-	if (file_descriptor == -1)
+	f = open(filename, O_RDWR | O_APPEND);
+	if (f < 0)
 		return (-1);
-
-	if (text_content != NULL)
+	l = 1;
+	for (x = 0; text_content && text_content[x]; x++)
 	{
-		write_status = write(file_descriptor, text_content, strlen(text_content));
-
-		if (write_status == -1)
-		{
-			close(file_descriptor);
-			return (-1);
-		}
+		l = write(f, &text_content[x], 1);
+		if (l != 1)
+			break;
 	}
-
-	close(file_descriptor);
+	close(f);
+	if (l != 1)
+		return (-1);
 	return (1);
 }
 
